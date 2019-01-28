@@ -53,7 +53,7 @@ navLinksArray.forEach( element => {
   navCounter += 1;
 });
 
-// Updated the content for each <a> element inside of <header>
+// Updates the content for each <a> element inside of <header>
 document.querySelector('.nav-item-1').textContent = siteContent.nav["nav-item-1"];
 document.querySelector('.nav-item-2').textContent = siteContent.nav["nav-item-2"];
 document.querySelector('.nav-item-3').textContent = siteContent.nav["nav-item-3"];
@@ -62,9 +62,9 @@ document.querySelector('.nav-item-5').textContent = siteContent.nav["nav-item-5"
 document.querySelector('.nav-item-6').textContent = siteContent.nav["nav-item-6"];
 
 
-// Update the img src for the logo
-// const logo = document.getElementById("logo-img");
-// logo.setAttribute('src', siteContent.nav["img-src"]);
+// Updates the img src for the logo
+const logo = document.getElementById("logo-img");
+logo.setAttribute('src', siteContent.nav["img-src"]);
 
 // Update the img src for the #cta-img
 // let codeSnippetImage = document.getElementById("cta-img");
