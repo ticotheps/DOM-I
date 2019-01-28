@@ -63,8 +63,12 @@ document.querySelector('.nav-item-6').textContent = siteContent.nav["nav-item-6"
 
 
 // Updates the img src for the logo
-const logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent.nav["img-src"]);
+const logo = document.getElementById('logo-img');
+logo.setAttribute('src', siteContent.nav['img-src']);
+
+// Updates the content of <h1> element inside of .cta-text <div>
+const ctaTextH1 = document.querySelector('h1');
+ctaTextH1.textContent = "DOM IS AWESOME";
 
 // Update the img src for the #cta-img
 // let codeSnippetImage = document.getElementById("cta-img");
