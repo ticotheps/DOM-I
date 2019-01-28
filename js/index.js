@@ -38,8 +38,24 @@ const siteContent = {
 };
 
 // Selects for all <a> elements within header and returns a NodeList
-let navLinkSelections = document.querySelectorAll('a');
-console.log(navLinkSelections[0]);
+const navLinksQuery = document.querySelectorAll('a');
+console.log(navLinksQuery);
+
+// Converts navLinksQuery NodeList into an array
+const navLinksArray = Array.from(navLinksQuery);
+console.log(navLinksArray);
+
+// Adds the 'nav-item-#' class name to each <a> element inside of <header>
+let navCounter = 1;
+navLinksArray.forEach( element => {
+  console.log(element);
+  element.className = `nav-item-${navCounter}`;
+  navCounter += 1;
+});
+
+
+
+
 
 
 
