@@ -68,7 +68,7 @@ logo.setAttribute('src', siteContent.nav['img-src']);
 
 // Updates the content of <h1> element inside of .cta-text <div>
 const ctaTextH1 = document.querySelector('h1');
-ctaTextH1.textContent = "DOM IS AWESOME";
+ctaTextH1.textContent = siteContent.cta['h1'];
 
 // Updates the img src for the #cta-img
 const ctaImage = document.getElementById("cta-img");
@@ -76,5 +76,7 @@ ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
 
 // Updates the content of <button> element inside of .cta-text <div>
 const ctaTextButton = document.querySelector('button');
-ctaTextButton.textContent = "Get Started";
+ctaTextButton.textContent = siteContent.cta['button'];
+
+
 
