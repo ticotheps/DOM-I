@@ -74,3 +74,7 @@ ctaTextH1.textContent = "DOM IS AWESOME";
 const ctaImage = document.getElementById("cta-img");
 ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
 
+// Updates the content of <button> element inside of .cta-text <div>
+const ctaTextButton = document.querySelector('button');
+ctaTextButton.textContent = "Get Started";
+
