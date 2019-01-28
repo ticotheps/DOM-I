@@ -70,7 +70,7 @@ logo.setAttribute('src', siteContent.nav['img-src']);
 const ctaTextH1 = document.querySelector('h1');
 ctaTextH1.textContent = "DOM IS AWESOME";
 
-// Update the img src for the #cta-img
-// let codeSnippetImage = document.getElementById("cta-img");
-// logo.setAttribute('src', siteContent["cta"]["img-src"]);
+// Updates the img src for the #cta-img
+const ctaImage = document.getElementById("cta-img");
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
 
