@@ -189,6 +189,18 @@ document.querySelector('.phone').textContent = siteContent["contact"]["phone"];
 document.querySelector('.email').textContent = siteContent["contact"]["email"];
 
 
+// Selects for the <p> element within <footer>
+const footerPQuery = document.querySelector('footer p');
+console.log(footerPQuery);
+
+// Adds respective class name from 'siteContent' to the <p> element in <footer>
+footerPQuery.className = "copyright";
+console.log(footerPQuery.className);
+
+// Updates the content for the <p> element in <footer>
+// with the appropriate text from siteContent object
+document.querySelector('.copyright').textContent = siteContent.footer.copyright;
+
 
 
 
