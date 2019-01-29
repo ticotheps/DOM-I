@@ -112,6 +112,12 @@ document.querySelector('.product-h4').textContent = siteContent["main-content"][
 document.querySelector('.vision-h4').textContent = siteContent["main-content"]["vision-h4"];
 
 
+// Updates the img src for the .middle-img
+const middleImage = document.querySelector(".middle-img");
+middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+
+
 
 
 
