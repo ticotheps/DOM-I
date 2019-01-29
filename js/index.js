@@ -151,6 +151,46 @@ document.querySelector('.product-content').textContent = siteContent["main-conte
 document.querySelector('.vision-content').textContent = siteContent["main-content"]["vision-content"];
 
 
+// Selects for the <h4> element within .contact <section>
+const contactH4Query = document.querySelector('.contact h4');
+console.log(contactH4Query);
+
+// Adds respective class name from 'siteContent' to the <h4> element in .contact <section>
+contactH4Query.className = "contact-h4";
+console.log(contactH4Query.className);
+
+
+// Updates the content for the <h4> element in .contact <section>
+// with the appropriate text from siteContent object
+document.querySelector('.contact-h4').textContent = siteContent.contact["contact-h4"];
+
+// Selects for all the <p> elements within .contact <section>
+const contactPQuery = document.querySelectorAll('.contact p');
+console.log(contactPQuery);
+
+// Converts contactPQuery NodeList into an array
+const contactPArray = Array.from(contactPQuery);
+console.log(contactPArray);
+
+// Adds respective class names from 'siteContent' to each <p> element in .contact <section>
+contactPArray[0].className = "address";
+console.log(contactPArray[0]);
+
+contactPArray[1].className = "phone";
+console.log(contactPArray[1]);
+
+contactPArray[2].className = "email";
+console.log(contactPArray[2]);
+
+// Updates the content for each <p> element in .contact <section>
+// with the appropriate text from siteContent object
+document.querySelector('.address').textContent = siteContent["contact"]["address"];
+document.querySelector('.phone').textContent = siteContent["contact"]["phone"];
+document.querySelector('.email').textContent = siteContent["contact"]["email"];
+
+
+
+
 
 
 
