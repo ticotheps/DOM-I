@@ -56,21 +56,27 @@ navLinksArray.forEach( element => {
 // Updates the content for each <a> element inside of <header>
 const navItem1 = document.querySelector('.nav-item-1');
 navItem1.textContent = siteContent.nav["nav-item-1"];
+navItem1.style.color = "green";
 
 const navItem2 = document.querySelector('.nav-item-2');
 navItem2.textContent = siteContent.nav["nav-item-2"];
+navItem2.style.color = "green";
 
 const navItem3 = document.querySelector('.nav-item-3');
 navItem3.textContent = siteContent.nav["nav-item-3"];
+navItem3.style.color = "green";
 
 const navItem4 = document.querySelector('.nav-item-4');
 navItem4.textContent = siteContent.nav["nav-item-4"];
+navItem4.style.color = "green";
 
 const navItem5 = document.querySelector('.nav-item-5');
 navItem5.textContent = siteContent.nav["nav-item-5"];
+navItem5.style.color = "green";
 
 const navItem6 = document.querySelector('.nav-item-6');
 navItem6.textContent = siteContent.nav["nav-item-6"];
+navItem6.style.color = "green";
 
 
 // Updates the img src for the logo
