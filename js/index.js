@@ -78,5 +78,40 @@ ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
 const ctaTextButton = document.querySelector('button');
 ctaTextButton.textContent = siteContent.cta['button'];
 
+// Selects for all <h4> elements within .main-content <section> and returns a NodeList
+const h4Query = document.querySelectorAll('h4');
+console.log(h4Query);
+
+// Converts h4Query NodeList into an array
+const h4Array = Array.from(h4Query);
+console.log(h4Array);
+
+// Adds respective class name from 'siteContent' to each <h4> element in .main-content <section>
+h4Array[0].className = "features-h4";
+console.log(h4Array[0]);
+
+h4Array[1].className = "about-h4";
+console.log(h4Array[1]);
+
+h4Array[2].className = "services-h4";
+console.log(h4Array[2]);
+
+h4Array[3].className = "product-h4";
+console.log(h4Array[3]);
+
+h4Array[4].className = "vision-h4";
+console.log(h4Array[4]);
+
+
+// Updates the content for each <h4> element in .main-content <section>
+// with the appropriate text from siteContent object
+document.querySelector('.features-h4').textContent = siteContent["main-content"]["features-h4"];
+document.querySelector('.about-h4').textContent = siteContent["main-content"]["about-h4"];
+document.querySelector('.services-h4').textContent = siteContent["main-content"]["services-h4"];
+document.querySelector('.product-h4').textContent = siteContent["main-content"]["product-h4"];
+document.querySelector('.vision-h4').textContent = siteContent["main-content"]["vision-h4"];
+
+
+
 
 
