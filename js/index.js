@@ -41,6 +41,7 @@ const siteContent = {
 const navLinksQuery = document.querySelectorAll('a');
 console.log(navLinksQuery);
 
+
 // Converts navLinksQuery NodeList into an array
 const navLinksArray = Array.from(navLinksQuery);
 console.log(navLinksArray);
@@ -56,27 +57,58 @@ navLinksArray.forEach( element => {
 // Updates the content for each <a> element inside of <header>
 const navItem1 = document.querySelector('.nav-item-1');
 navItem1.textContent = siteContent.nav["nav-item-1"];
+// Updates the color of navigation text to green
 navItem1.style.color = "green";
 
 const navItem2 = document.querySelector('.nav-item-2');
 navItem2.textContent = siteContent.nav["nav-item-2"];
+// Updates the color of navigation text to green
 navItem2.style.color = "green";
 
 const navItem3 = document.querySelector('.nav-item-3');
 navItem3.textContent = siteContent.nav["nav-item-3"];
+// Updates the color of navigation text to green
 navItem3.style.color = "green";
 
 const navItem4 = document.querySelector('.nav-item-4');
 navItem4.textContent = siteContent.nav["nav-item-4"];
+// Updates the color of navigation text to green
 navItem4.style.color = "green";
 
 const navItem5 = document.querySelector('.nav-item-5');
 navItem5.textContent = siteContent.nav["nav-item-5"];
-navItem5.style.color = "green";
+// Updates the color of navigation text to green
+navItem5.style.color = "green"; 
 
 const navItem6 = document.querySelector('.nav-item-6');
 navItem6.textContent = siteContent.nav["nav-item-6"];
+// Updates the color of navigation text to green
 navItem6.style.color = "green";
+
+
+// Create a new <a> element to be added into header <nav>
+const newNode = document.createElement("A");
+console.log(newNode);
+
+// Create text for new <a> element
+const newNodeText = document.createTextNode("Blog");
+console.log(newNodeText);
+
+// Appends 'newNodeText' to 'newNode'
+newNode.appendChild(newNodeText);
+
+// Changes color of 'newNodeText' to 'green'
+newNode.style.color = "green";
+
+newNode.className = "nav-item-7";
+
+// Selects for the <nav> element within <header>
+const navQuery = document.querySelector("nav");
+console.log(navQuery);
+
+// Appends 'newNode' to end of 'navQuery' <nav> element
+navQuery.appendChild(newNode);
+
 
 
 // Updates the img src for the logo
