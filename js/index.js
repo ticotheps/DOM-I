@@ -87,6 +87,7 @@ navItem6.style.color = "green";
 
 
 // Create a new <a> element to be added into header <nav>
+// via .appendChild()
 const newNode = document.createElement("A");
 console.log(newNode);
 
@@ -100,6 +101,7 @@ newNode.appendChild(newNodeText);
 // Changes color of 'newNodeText' to 'green'
 newNode.style.color = "green";
 
+// Adds a class name
 newNode.className = "nav-item-7";
 
 // Selects for the <nav> element within <header>
@@ -108,6 +110,29 @@ console.log(navQuery);
 
 // Appends 'newNode' to end of 'navQuery' <nav> element
 navQuery.appendChild(newNode);
+
+
+
+// Create a ANOTHER new <a> element to be added into header <nav>
+// via .prepend()
+const newNode2 = document.createElement("A");
+console.log(newNode2);
+
+// Create text for new <a> element
+const newNode2Text = document.createTextNode("Mission");
+console.log(newNode2Text);
+
+// Appends 'newNodeText' to 'newNode'
+newNode2.appendChild(newNode2Text);
+
+// Changes color of 'newNodeText' to 'green'
+newNode2.style.color = "green";
+
+// Adds a class name
+newNode2.className = "nav-item-0";
+
+// Appends 'newNode' to end of 'navQuery' <nav> element
+navQuery.prepend(newNode2);
 
 
 
