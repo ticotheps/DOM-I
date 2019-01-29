@@ -86,7 +86,7 @@ console.log(h4Query);
 const h4Array = Array.from(h4Query);
 console.log(h4Array);
 
-// Adds respective class name from 'siteContent' to each <h4> element in .main-content <section>
+// Adds respective class names from 'siteContent' to each <h4> element in .main-content <section>
 h4Array[0].className = "features-h4";
 console.log(h4Array[0]);
 
@@ -115,6 +115,40 @@ document.querySelector('.vision-h4').textContent = siteContent["main-content"]["
 // Updates the img src for the .middle-img
 const middleImage = document.querySelector(".middle-img");
 middleImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+
+// Selects for all <p> elements within .main-content <section> and returns a NodeList
+const pQuery = document.querySelectorAll('.main-content p');
+console.log(pQuery);
+
+// Converts pQuery NodeList into an array
+const pArray = Array.from(pQuery);
+console.log(pArray);
+
+// Adds respective class names from 'siteContent' to each <p> element in .main-content <section>
+pArray[0].className = "features-content";
+console.log(pArray[0]);
+
+pArray[1].className = "about-content";
+console.log(pArray[1]);
+
+pArray[2].className = "services-content";
+console.log(pArray[2]);
+
+pArray[3].className = "product-content";
+console.log(pArray[3]);
+
+pArray[4].className = "vision-content";
+console.log(pArray[4]);
+
+
+// Updates the content for each <p> element in .main-content <section>
+// with the appropriate text from siteContent object
+document.querySelector('.features-content').textContent = siteContent["main-content"]["features-content"];
+document.querySelector('.about-content').textContent = siteContent["main-content"]["about-content"];
+document.querySelector('.services-content').textContent = siteContent["main-content"]["services-content"];
+document.querySelector('.product-content').textContent = siteContent["main-content"]["product-content"];
+document.querySelector('.vision-content').textContent = siteContent["main-content"]["vision-content"];
 
 
 
