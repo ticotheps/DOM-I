@@ -54,12 +54,23 @@ navLinksArray.forEach( element => {
 });
 
 // Updates the content for each <a> element inside of <header>
-document.querySelector('.nav-item-1').textContent = siteContent.nav["nav-item-1"];
-document.querySelector('.nav-item-2').textContent = siteContent.nav["nav-item-2"];
-document.querySelector('.nav-item-3').textContent = siteContent.nav["nav-item-3"];
-document.querySelector('.nav-item-4').textContent = siteContent.nav["nav-item-4"];
-document.querySelector('.nav-item-5').textContent = siteContent.nav["nav-item-5"];
-document.querySelector('.nav-item-6').textContent = siteContent.nav["nav-item-6"];
+const navItem1 = document.querySelector('.nav-item-1');
+navItem1.textContent = siteContent.nav["nav-item-1"];
+
+const navItem2 = document.querySelector('.nav-item-2');
+navItem2.textContent = siteContent.nav["nav-item-2"];
+
+const navItem3 = document.querySelector('.nav-item-3');
+navItem3.textContent = siteContent.nav["nav-item-3"];
+
+const navItem4 = document.querySelector('.nav-item-4');
+navItem4.textContent = siteContent.nav["nav-item-4"];
+
+const navItem5 = document.querySelector('.nav-item-5');
+navItem5.textContent = siteContent.nav["nav-item-5"];
+
+const navItem6 = document.querySelector('.nav-item-6');
+navItem6.textContent = siteContent.nav["nav-item-6"];
 
 
 // Updates the img src for the logo
